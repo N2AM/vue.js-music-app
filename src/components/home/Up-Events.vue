@@ -9,32 +9,27 @@
           </div>
         </div>
       </div>
-      <!-- <div class="row"> -->
-      <div>
-        <VueSlickCarousel :arrows="true" :dots="true" v-bind="settings">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
-        </VueSlickCarousel>
-      </div>
-      <VueSlickCarousel class="event__slider" v-bind="settings">
-        <div v-for="event in events" v-bind:key="event">
-          <div class="event__item">
-            <div class="event__item__pic set-bg" :data-setbg="event.img">
-              <img v-bind:src="event.img" :alt="event.name" />
-              <div class="tag-date">
-                <span>{{ event.date }}</span>
+      <div class="row">
+        <VueSlickCarousel class="event__slider" v-bind="settings">
+          <div v-for="event in events" v-bind:key="event" class="p-3">
+            <div class="event__item">
+              <div class="event__item__pic set-bg" :data-setbg="event.img">
+                <img v-bind:src="event.img" :alt="event.name" />
+                <div class="tag-date">
+                  <span>{{ event.date }}</span>
+                </div>
+              </div>
+              <div class="event__item__text">
+                <h4>{{ event.name }}</h4>
+                <p>
+                  <i class="fa fa-map-marker"></i>
+                  {{ event.location }}
+                </p>
               </div>
             </div>
-            <div class="event__item__text">
-              <h4>{{ event.name }}</h4>
-              <p><i class="fa fa-map-marker"></i> {{ event.location }}</p>
-            </div>
           </div>
-        </div>
-      </VueSlickCarousel>
-      <!-- </div> -->
+        </VueSlickCarousel>
+      </div>
     </div>
   </section>
   <!-- Event Section End -->
@@ -57,39 +52,38 @@ export default Vue.extend({
           name: "David Guetta Miami Ultra",
           location: "Funkhaus Berlin, Berlin, Germany",
           img: require("@/assets/img/events/event-1.jpg"),
-          date: "Dec 15, 2019",
+          date: "Dec 15, 2019"
         },
         {
           name: "David Guetta Miami Ultra",
           location: "Funkhaus Berlin, Berlin, Germany",
           img: require("@/assets/img/events/event-2.jpg"),
-          date: "Dec 15, 2019",
+          date: "Dec 15, 2019"
         },
         {
           name: "David Guetta Miami Ultra",
           location: "Funkhaus Berlin, Berlin, Germany",
           img: require("@/assets/img/events/event-3.jpg"),
-          date: "Dec 15, 2019",
+          date: "Dec 15, 2019"
         },
         {
           name: "David Guetta Miami Ultra",
           location: "Funkhaus Berlin, Berlin, Germany",
-          img: require("@/assets/img/events/event-3.jpg"),
-          date: "Dec 15, 2019",
-        },
+          img: require("@/assets/img/events/event-2.jpg"),
+          date: "Dec 15, 2019"
+        }
       ],
       settings: {
-        dots: true,
+        dots: false,
         arrows: true,
-        dotsClass: "slick-dots custom-dot-class",
-        // infinite: true,
-        speed: 500,
-        // autoplay: true,
+        infinite: true,
+        // speed: 500,
+        autoplaySpeed: 1500,
         slidesToShow: 3,
         slidesToScroll: 3,
-        // initialSlide: 0,
+        autoplay: true,
         focusOnSelect: false,
-        rtl: true,
+        rtl: true
         // responsive: [
         //   {
         //     breakpoint: 1024,
@@ -116,11 +110,38 @@ export default Vue.extend({
         //     },
         //   },
         // ],
-      },
+      }
     };
-  },
+  }
 });
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss"></style>
+<style lang="scss">
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: -40px;
+  z-index: 1;
+}
+.slick-next {
+  right: 11px;
+
+  &::before {
+    content: "\f105";
+    font-family: fontawesome;
+    font-size: 26px;
+    color: grey;
+  }
+}
+.slick-prev {
+  right: 35px;
+  left: unset;
+  &::before {
+    content: "\f104";
+    font-family: fontawesome;
+    font-size: 26px;
+    color: grey;
+  }
+}
+</style>

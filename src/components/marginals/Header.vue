@@ -1,6 +1,6 @@
 <template>
   <!-- Header Section Begin -->
-  <header class="header">
+  <header class="header" :class="{ 'header--normal' : !($route.path == '/') }">
     <div class="container">
       <div class="row">
         <div class="col-lg-2 col-md-2">
@@ -15,10 +15,10 @@
             <nav class="header__menu mobile-menu">
               <ul>
                 <li class="active">
-                  <a href="./index.html">Home</a>
+                  <router-link to="/">Home</router-link>
                 </li>
                 <li>
-                  <a href="./about.html">About</a>
+                  <router-link to="/about">About</router-link>
                 </li>
                 <li>
                   <a href="./discography.html">Discography</a>
@@ -44,7 +44,7 @@
                   </ul>
                 </li>
                 <li>
-                  <a href="./contact.html">Contact</a>
+                  <router-link to="/contact">Contact</router-link>
                 </li>
               </ul>
             </nav>
@@ -75,7 +75,22 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  name: "Header"
+  name: "Header",
+  data() {
+    return {
+      // colorNav: false
+    };
+  },
+  watch: {
+    // route() {
+    //   if (this.$route.path == "/") {
+    //     this.colorNav = false;
+    //     console.log("s");
+    //   } else {
+    //     this.colorNav = true;
+    //   }
+    // }
+  }
 });
 </script>
 

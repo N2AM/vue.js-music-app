@@ -1,26 +1,21 @@
 <template>
   <div class="home">
-    <Header></Header>
     <Main></Main>
     <up-events></up-events>
-    <Footer></Footer>
+    <MainContact></MainContact>
+    <Services></Services>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Main from "@/components/Main.vue";
-import UpEvents from "@/components/Up-Events.vue";
-import Header from "@/components/marginals/Header.vue";
-import Footer from "@/components/marginals/Footer.vue";
+import Main from "@/components/home/Main.vue";
+import UpEvents from "@/components/home/Up-Events.vue";
+import MainContact from "@/components/home/Main-contact.vue";
+import Services from "@/components/home/Services.vue";
 
 export default {
   name: "Home",
-  components: {
-    Main,
-    UpEvents,
-    Header,
-    Footer
-  }
+  components: { Main, UpEvents, MainContact, Services }
 };
 </script>
