@@ -14,32 +14,32 @@
           <div class="header__nav">
             <nav class="header__menu mobile-menu">
               <ul>
-                <li class="active">
+                <li>
                   <router-link to="/">Home</router-link>
                 </li>
                 <li>
                   <router-link to="/about">About</router-link>
                 </li>
                 <li>
-                  <a href="./discography.html">Discography</a>
+                  <router-link to="/discography">Discography</router-link>
                 </li>
                 <li>
-                  <a href="./tours.html">Tours</a>
+                  <router-link to="/tours">Tours</router-link>
                 </li>
                 <li>
-                  <a href="./videos.html">Videos</a>
+                  <router-link to="/videos">Videos</router-link>
                 </li>
                 <li>
-                  <a href="#">Pages</a>
+                  <router-link to="#">Pages</router-link>
                   <ul class="dropdown">
                     <li>
-                      <a href="./about.html">About</a>
+                      <router-link to="/">About</router-link>
                     </li>
                     <li>
-                      <a href="./blog.html">Blog</a>
+                      <router-link to="/">Blog</router-link>
                     </li>
                     <li>
-                      <a href="./blog-details.html">Blog Details</a>
+                      <router-link to="/">Blog Details</router-link>
                     </li>
                   </ul>
                 </li>

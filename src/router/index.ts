@@ -28,6 +28,10 @@ const routes: Array<RouteConfig> = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Contact.vue"),
   },
+  {
+    path: "**",
+    redirect: "/",
+  },
 ];
 
 const router = new VueRouter({

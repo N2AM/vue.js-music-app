@@ -11,7 +11,8 @@
       </div>
       <div class="row">
         <VueSlickCarousel class="event__slider" v-bind="settings">
-          <div v-for="event in events" v-bind:key="event" class="p-3">
+          <!-- v-bind:key="event" -->
+          <div v-for="event in events" class="p-3">
             <div class="event__item">
               <div class="event__item__pic set-bg" :data-setbg="event.img">
                 <img v-bind:src="event.img" :alt="event.name" />
@@ -37,7 +38,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-import VueSlickCarousel from "vue-slick-carousel";
+var VueSlickCarousel = require("vue-slick-carousel");
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
 
 // optional style for arrows & dots

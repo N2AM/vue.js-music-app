@@ -45,13 +45,13 @@
       margin-right: 45px;
       position: relative;
 
-      &.active {
-        a {
-          &:after {
-            opacity: 1;
-          }
+      // &: {
+      a.router-link-exact-active {
+        &:after {
+          opacity: 1;
         }
       }
+      // }
 
       &:hover {
         a {
