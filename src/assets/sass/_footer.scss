@@ -6,9 +6,13 @@
   padding-bottom: 60px;
   height: 549px;
   background-image: url(../img/footer-bg.png);
+  transform: scaleX(-1);
 
   &.footer--normal {
     margin-top: 0;
+  }
+  .container {
+    transform: scaleX(-1);
   }
 }
 
@@ -150,13 +154,13 @@
 .footer__copyright__text {
   text-align: center;
   p {
-    color: #999999;
+    color: white;
   }
   a {
-    color: #999999;
+    color: white;
     text-decoration: underline;
     &:hover {
-      color: $primary-color;
+      color: #d9e9f1;
     }
   }
   i {

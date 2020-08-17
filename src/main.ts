@@ -9,6 +9,9 @@ import "@/assets/sass/style.scss";
 
 // js
 import "bootstrap";
+// import "./assets/js/jquery-3.3.1.min.js";
+// import "./assets/js/jquery.jplayer.min.js";
+// import "./assets/js/jplayerInit.js";
 import App from "./App.vue";
 
 Vue.use(Vuelidate);

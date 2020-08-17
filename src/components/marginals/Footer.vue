@@ -9,19 +9,19 @@
               <li>
                 <i class="fa fa-phone"></i>
                 <p>Phone</p>
-                <h6>1-677-124-44227</h6>
+                <h6>+201060767771</h6>
               </li>
               <li>
                 <i class="fa fa-envelope"></i>
                 <p>Email</p>
-                <h6>DJ.Music@gmail.com</h6>
+                <h6>nouranalrefaiportfolio@gmail.com</h6>
               </li>
             </ul>
           </div>
         </div>
         <div class="col-lg-4 offset-lg-1 col-md-6">
           <div class="footer__social">
-            <h2>DJoz</h2>
+            <h2>Listen To Holy Quraan</h2>
             <div class="footer__social__links">
               <a href="#">
                 <i class="fa fa-facebook"></i>
@@ -53,8 +53,11 @@
       <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
       <div class="footer__copyright__text">
         <p>
-          Copyright &copy; {{date}} All rights reserved | This template is made with
-          <i class="fa fa-heart" aria-hidden="true"></i> by
+          Copyright &copy; {{date}} All rights reserved | This Website is made with
+          <i
+            class="fa fa-heart"
+            aria-hidden="true"
+          ></i> by
           <a href="https://nouranalrefai.com" target="_blank">Nouran</a>
         </p>
       </div>

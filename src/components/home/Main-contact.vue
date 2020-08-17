@@ -11,15 +11,11 @@
         <div class="col-lg-6">
           <div class="about__text">
             <div class="section-title">
-              <h2>DJ Alexandra Rud</h2>
-              <h1>About me</h1>
+              <h2>ABDULBASIT ABDULSAMAD</h2>
+              <h1>About A Reciter</h1>
             </div>
-            <p>
-              DJ Rainflow knows how to move your mind, body and soul by delivering tracks that stand out
-              from the norm. As if this impressive succession of high impact, floor-filling bombs wasn’t
-              enough to sustain.
-            </p>
-            <a href="#" class="primary-btn">CONTACT ME</a>
+            <p>ABDULBASIT ABDULSAMAD an Egyptian Quran reciter and is regarded as one of the best reciters of the Quran of his time. He had won three world Qira'at competitions in the early 1970s. ‘Abdus-Samad was one of the first huffaz to make commercial recordings of his recitations, and the first president of the Reciters' Union in Egypt. At 10, Abdul Basit finished learning the entire Quran by heart in his village.</p>
+            <router-link class="primary-btn" to="/contact">CONTACT ME</router-link>
           </div>
         </div>
       </div>
@@ -38,4 +34,11 @@ export default Vue.extend({
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+.about__pic {
+  height: 100%;
+
+  img {
+    height: 97.5%;
+  }
+}
 </style>

@@ -1,10 +1,9 @@
 /******************************************************************
-  Template Name: DJoz
-  Description:  DJoz Music HTML Template
-  Author: Colorlib
-  Author URI: https://colorlib.com
-  Version: 1.0
-  Created: Colorlib
+  Template Name: Listen To Holy Quraan
+  Description:  Holy Quraan web app
+  Author: Nouran Al-Refai
+  Author URI: https://nouranalrefai.com
+  Version: 1.1
 ******************************************************************/
 /*------------------------------------------------------------------
 [Table of contents]
@@ -31,7 +30,7 @@
 html,
 body {
   height: 100%;
-  font-family: 'Now Regular';
+  font-family: "Now Regular";
   -webkit-font-smoothing: antialiased;
 }
 
@@ -44,7 +43,7 @@ h6 {
   margin: 0;
   color: #111111;
   font-weight: 400;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
 }
 
 h1 {
@@ -73,7 +72,7 @@ h6 {
 
 p {
   font-size: 15px;
-  font-family: 'Now Regular';
+  font-family: "Now Regular";
   color: #444444;
   font-weight: 400;
   line-height: 26px;
@@ -124,9 +123,9 @@ ol {
   }
 
   h1 {
-    font-size: 100px;
+    font-size: 77px;
     color: #f2f2f2;
-    font-family: 'Rockville Solid Regular';
+    font-family: "Rockville Solid Regular";
     position: absolute;
     left: 0;
     top: -45px;

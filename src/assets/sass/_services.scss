@@ -20,8 +20,8 @@
     border-radius: 50%;
     background: linear-gradient(
       to right,
-      rgba(127, 0, 173, 0.3),
-      rgba(93, 0, 206, 0.3)
+      rgba(79, 180, 193, 0.3),
+      rgba(51, 168, 183, 0.3)
     );
     display: inline-block;
     line-height: 90px;
@@ -41,7 +41,7 @@
       top: 15px;
       height: 60px;
       width: 60px;
-      background: linear-gradient(to right, #7e00ad, #5c00ce);
+      background: linear-gradient(to right, #33a8b7, #8dd8fd);
       border-radius: 50%;
       content: "";
       z-index: -1;
@@ -59,7 +59,7 @@
   padding: 70px 40px 40px 70px;
 
   &.deep-bg {
-    background: #5400bc;
+    background: #d5f0fe;
   }
 
   h4 {

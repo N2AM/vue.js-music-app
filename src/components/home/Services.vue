@@ -1,11 +1,17 @@
 <template>
   <!-- Services Section Begin -->
   <section class="services">
-    <div class="container-fluid">
+    <div class="container-fluid px-0">
       <div class="row">
         <div class="col-lg-6 p-0">
           <div class="services__left set-bg" data-setbg="@/assets/img/services/service-left.jpg">
-            <a href="https://www.youtube.com/watch?v=JGwWNGJdvx8" class="play-btn video-popup">
+            <a
+              id="launch-modal"
+              type="button"
+              data-toggle="modal"
+              data-target="#servicesModal"
+              class="play-btn video-popup"
+            >
               <i class="fa fa-play"></i>
             </a>
           </div>
@@ -41,6 +47,43 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade bd-example-modal-lg"
+      id="servicesModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="servicesModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <iframe
+              width="727"
+              height="409"
+              src="https://www.youtube.com/embed/kFn64z09MWA?list=PLyYVay2_zZ5-APbq_hGcMu15CuCWVMeiV"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <!-- <iframe
+                src="https://m.youtube.com/embed/kFn64z09MWA&list=PLyYVay2_zZ5-APbq_hGcMu15CuCWVMeiV&index=4&t=0s"
+                allow="fullscreen"
+                width="400"
+                height="300"
+                frameborder="0"
+                allowfullscreen
+            ></iframe>-->
+          </div>
+          <div class="modal-footer border-0"></div>
         </div>
       </div>
     </div>

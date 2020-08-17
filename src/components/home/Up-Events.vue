@@ -50,25 +50,25 @@ export default Vue.extend({
     return {
       events: [
         {
-          name: "David Guetta Miami Ultra",
+          name: "Holy Quraan Event",
           location: "Funkhaus Berlin, Berlin, Germany",
           img: require("@/assets/img/events/event-1.jpg"),
           date: "Dec 15, 2019"
         },
         {
-          name: "David Guetta Miami Ultra",
+          name: "Holy Quraan Event",
           location: "Funkhaus Berlin, Berlin, Germany",
           img: require("@/assets/img/events/event-2.jpg"),
           date: "Dec 15, 2019"
         },
         {
-          name: "David Guetta Miami Ultra",
+          name: "Holy Quraan Event",
           location: "Funkhaus Berlin, Berlin, Germany",
           img: require("@/assets/img/events/event-3.jpg"),
           date: "Dec 15, 2019"
         },
         {
-          name: "David Guetta Miami Ultra",
+          name: "Holy Quraan Event",
           location: "Funkhaus Berlin, Berlin, Germany",
           img: require("@/assets/img/events/event-2.jpg"),
           date: "Dec 15, 2019"
