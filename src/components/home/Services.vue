@@ -28,14 +28,14 @@
             <div class="col-lg-6 p-0 order-lg-2 col-md-6 order-md-2">
               <div class="service__item">
                 <img src="@/assets/img/services/service-2.png" alt />
-                <h4>Clubs and bar</h4>
+                <h4>Reciters gathering</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
               </div>
             </div>
             <div class="col-lg-6 p-0 order-lg-4 col-md-6 order-md-4">
               <div class="service__item deep-bg">
                 <img src="@/assets/img/services/service-4.png" alt />
-                <h4>DJ lessons</h4>
+                <h4>Recitation lessons</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
               </div>
             </div>

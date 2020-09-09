@@ -1,6 +1,6 @@
 <template>
   <!-- Footer Section Begin -->
-  <footer class="footer spad set-bg" data-setbg="img/footer-bg.png">
+  <footer class="footer set-bg" data-setbg="img/footer-bg.png">
     <div class="container">
       <div class="row">
         <div class="col-lg-3 col-md-6">
